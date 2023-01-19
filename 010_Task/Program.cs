@@ -9,7 +9,7 @@ while (true)
 {
     Console.Write("Введите трехзначное число: ");
     string textNum = Console.ReadLine();
-    if (int.TryParse(textNum, out int number) && (number > 99) && (number < 1000))
+    if (int.TryParse(textNum, out int number) && (number > 99) && (number < 1000)) // Проверка, что введенная строка есть число и оно 3-х значное
     {
         int dig = (number / 10) % 10;
         Console.WriteLine($"Вы ввели число {number}, вторая цифра этого числа {dig}.");
@@ -17,4 +17,3 @@ while (true)
     }
     Console.WriteLine("Не удалось распознать требуемое число, попробуйте еще раз.");
 }
-   
